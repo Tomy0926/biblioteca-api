@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Listar loa archivos del repositorio
-        run: 
+      - name: Listar los archivos del repositorio
+        run: |
           echo "El repositorio ${{ github.repository }} contiene los siguientes archivos:"
-          find . -type f
+          tree
