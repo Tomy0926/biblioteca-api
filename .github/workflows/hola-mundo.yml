@@ -9,10 +9,11 @@ on:
       - 'BibliotecaApi/**'
       - 'BibliotecaApiTest/**'
       - '.github/workflows/hola-mundo.yml'
-  pull_request:
-    branches:
-      - main
-  jobs:
+   pull_request:
+     branches:
+       - main
+
+  jobs: 
     saludar:
       runs-on: ubuntu-lastest
       steps:
@@ -26,3 +27,4 @@ on:
           run:
             echo "El repositorio ${{ github.repository }} contiene los siguientes archivos:"
             tree
+  
