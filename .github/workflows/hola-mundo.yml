@@ -2,16 +2,16 @@ name: Hola Mundo
 
 on: 
   workflow_dispatch: #jecucion manual
-  push:
-    branches:
-      - main
-    paths:
-      - 'BibliotecaApi/**'
-      - 'BibliotecaApiTest/**'
-      - '.github/workflows/hola-mundo.yml'
-  pull_request:
-    branches:
-      - main
+  #push:
+    #branches:
+      #- main
+    #paths:
+      #- 'BibliotecaApi/**'
+      #- 'BibliotecaApiTest/**'
+      #- '.github/workflows/hola-mundo.yml'
+  #pull_request:
+    #branches:
+      #- main
     
 jobs:
   saludar:
